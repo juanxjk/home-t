@@ -1,167 +1,65 @@
-# Adminator HTML5 Admin Template
-**Adminator** is a responsive Bootstrap 4 Admin Template. It provides you with a collection of ready to use code snippets and utilities, custom pages, a collection of applications and some useful widgets. Preview of this awesome admin template available here: https://colorlib.com/polygon/adminator/index.html
+# [Start Bootstrap - SB Admin 2](https://startbootstrap.com/template-overviews/sb-admin-2/)
 
-# Preview
+[SB Admin 2](https://startbootstrap.com/template-overviews/sb-admin-2/) is an open source admin dashboard theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
-### Screenshot
+For the legacy Bootstrap 3 version of this theme, you can view the [last stable release](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2/releases/tag/v3.3.7%2B1) of SB Admin 2 for Bootstrap 3.
 
-![Adminator admin dashboard template preview](https://colorlib.com/wp/wp-content/uploads/sites/2/adminator-free-admin-dashboard-template.jpg)
+## Preview
 
-### Demo Site: [Here](https://colorlib.com/polygon/adminator/index.html)
+[![SB Admin 2 Preview](https://startbootstrap.com/assets/img/screenshots/themes/sb-admin-2.png)](https://blackrockdigital.github.io/startbootstrap-sb-admin-2/)
 
-## TOC
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installing & Local Development](#installing--local-development)
-- [Files/Folder Structure](#filesfolders-structure)
-- [Deployment](#deployment)
-- [Built With](#built-with)
-- [Changelog](#changelog)
-- [Authors](#authors)
-- [License](#license)
+**[Launch Live Preview](https://blackrockdigital.github.io/startbootstrap-sb-admin-2/)**
 
+## Status
 
-## Getting Started
-In order to run **Adminator** on your local machine all what you need to do is to have the prerequisites stated below installed on your machine and follow the installation steps down below.
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-sb-admin-2/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/startbootstrap-sb-admin-2.svg)](https://www.npmjs.com/package/startbootstrap-sb-admin-2)
+[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-sb-admin-2.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-sb-admin-2)
+[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-sb-admin-2/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-sb-admin-2)
+[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-sb-admin-2/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-sb-admin-2?type=dev)
 
-#### Prerequisites
-  - Node.js
-  - Yarn or NPM
-  - Git
-  - libpng-dev *linux only*
+## Download and Installation
 
-#### Installing & Local Development
-Start by typing the following commands in your terminal in order to get **Adminator** full package on your machine and starting a local development server with live reload feature.
+To begin using this template, choose one of the following options to get started:
 
-```
-> git clone https://github.com/puikinsh/Adminator-admin-dashboard.git adminator
-> cd adminator
-> npm install
-> npm run dev
-```
+-   [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/sb-admin-2/)
+-   Install via npm: `npm i startbootstrap-sb-admin-2`
+-   Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-sb-admin-2.git`
+-   [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2)
 
+## Usage
 
-## Files/Folders Structure
-Here is a brief explanation of the template folder structure and some of its main files usage:
+After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
 
-```
-└── src                         # Contains all template source files.
-│   └── assets                  # Contains JS, CSS, images and icon fonts.
-│   │   └── scripts             # Contains all JavaScript files.
-│   │   │   └── charts          # Chart.js, Sparkline & Pie Chart plugins init.
-│   │   │   └── chat            # All chat app JS code.
-│   │   │   └── constants       # Template constant values like color values.
-│   │   │   └── datatable       # Date table plugin init.
-│   │   │   └── datepicker      # Bootstrap datepicker init.
-│   │   │   └── email           # All email app code.
-│   │   │   └── fullcalendar    # Fullcalendar plugin init.
-│   │   │   └── googleMaps      # Google maps API integration code.
-│   │   │   └── masonry         # Masonry layout code.
-│   │   │   └── popover         # Bootstrap popover plugin init.
-│   │   │   └── scrollbar       # Perfect scrollbar plugin init.
-│   │   │   └── search          # Topbar toggle search init.
-│   │   │   └── sidebar         # Sidebar JS code.
-│   │   │   └── skycons         # Animated icons plugin init.
-│   │   │   └── utils           # Basic utils used for proper rendering.
-│   │   │   └── vectorMaps      # Vector maps plugin init.
-│   │   │   └── index.js        # Indicator file.
-│   │   │
-│   │   └── static              # Contains the non-code files.
-│   │   │   └── fonts           # Contains icon fonts.
-│   │   │   └── images          # Contains all template images/svg.
-│   │   │
-│   │   └── styles              # Contains all SCSS files.
-│   │       └── spec            # Contains custom SCSS files.
-│   │       │   └── components  # Contains all template components.
-│   │       │   └── generic     # Contains basic scaffolding styles.
-│   │       │   └── screens     # Contains views specific styles.
-│   │       │   └── settings    # Contains all template variables.
-│   │       │   └── tools       # Contains all mixins.
-│   │       │   └── utils       # Contains helper classes.
-│   │       │   └── index.scss  # Indicator file.
-│   │       │
-│   │       └── vendor          # Contains all plugin files & custom styles.
-│   │       └── index.scss      # Indicator file.
-│   │
-│   └── *.html                  # All HTML pages files .
-└── webpack                     # Contains Webpack init code.
-│   └── plugins                 # Contains all Webpack plugins config.
-│   └── rules                   # Contains Loaders config code.
-│   └── config.js               # Contains Webpack config object.
-│   └── devServer.js            # Webpack dev server config code.
-│   └── manifest.js             # All build system constants.
-│
-└── .babelrc                    # Babel ES6 Transpiler.
-└── .editorconfig               # Keep same coding styles between code editors.
-└── .eslintrc.yml               # JavaScript Linting.
-└── .gitattributes              # Git Attributes.
-└── .gitignore                  # Ignored files in Git.
-└── .stylelintrc.yml            # SCSS/CSS Linting.
-└── browserslist                # Supported Browsers.
-└── CHANGELOG.md                # Versioning.
-└── package.json                # Package metadata.
-└── README.md                   # Manual file.
-└── webpack.config.js           # Webpack main config file.
-└── yarn.lock                   # Yarn metadata.
-```
+### Gulp Tasks
 
-## Deployment
-In deployment process, you have two commands:
+-   `gulp` the default task that builds everything
+-   `gulp watch` browserSync opens the project in your default browser and live reloads when changes are made
+-   `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
+-   `gulp js` minifies the themes JS file
+-   `gulp vendor` copies dependencies from node_modules to the vendor directory
 
-1. Build command
-Used to generate the final result of compiling src files into build folder. This can be achieved by running the following command:
-```
-> npm run build
-```
+You must have npm installed globally in order to use this build environment. This theme was built using node v11.6.0 and the Gulp CLI v2.0.1. If Gulp is not running properly after running `npm install`, you may need to update node and/or the Gulp CLI locally.
 
-2. Preview command
-Used to create a local dev server in order to preview the final output of build process. This can be achieved by running the following command:
-```
-> npm run preview
-```
+## Bugs and Issues
 
-## Built With
-- [Babel](https://babeljs.io/)
-- [Webpack](https://webpack.js.org/)
-- [Eslint](https://eslint.org/)
-- [Sass](http://sass-lang.com/)
-- [Postcss](http://postcss.org/)
-- [Stylelint](https://stylelint.io/)
-- [Bootstrap](http://getbootstrap.com/)
-- [Chart.js](http://www.chartjs.org/)
-- [Datatables](https://datatables.net/)
-- [Easy Pie Chart](http://rendro.github.io/easy-pie-chart/)
-- [Fullcalendar](https://fullcalendar.io/)
-- [Jquery](https://jquery.com/)
-- [Jquery Sparkline](https://omnipotent.net/jquery.sparkline/)
-- [Jvectormap](http://jvectormap.com/)
-- [Load Google Maps API](https://github.com/yuanqing/load-google-maps-api)
-- [Lodash](https://lodash.com/)
-- [Masonry](https://masonry.desandro.com/)
-- [Moment](https://momentjs.com/)
-- [Perfect Scrollbar](https://github.com/utatti/perfect-scrollbar)
-- [Skycons](https://darkskyapp.github.io/skycons/)
-- [Fontawesome](http://fontawesome.io/)
-- [Themify Icons](https://themify.me/themify-icons)
-- [Roboto Font](https://fonts.google.com/specimen/Roboto)
-- [Bootstrap Datepicker](https://bootstrap-datepicker.readthedocs.io/en/latest/)
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/sb-admin-2/).
 
-## Changelog
-#### V 1.0.0
-Initial Release
+## About
 
-## Authors
-[Colorlib](https://colorlib.com)
+Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
 
-## More info
-- [Bootstrap Dashboards](https://colorlib.com/wp/free-bootstrap-admin-dashboard-templates/)
-- [Bootstrap Templates](https://colorlib.com/wp/free-bootstrap-templates/)
-- [HTML Templates](https://colorlib.com/wp/free-html-website-templates/)
-- [Free Admin Dashboards](https://colorlib.com/wp/free-html5-admin-dashboard-templates/)
-- [Website Templates](https://colorlib.com/wp/templates/)
-- [Free CSS Templates](https://colorlib.com/wp/free-css-website-templates/)
-- [WordPress Themes](https://colorlib.com/wp/free-wordpress-themes/)
+-   <https://startbootstrap.com>
+-   <https://twitter.com/SBootstrap>
 
-## License
+Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**.
 
-Adminator is licensed under The MIT License (MIT). Which means that you can use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the final products. But you always need to state that Colorlib is the original author of this template.
+-   <http://davidmiller.io>
+-   <https://twitter.com/davidmillerskt>
+-   <https://github.com/davidtmiller>
+
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+
+## Copyright and License
+
+Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-resume/blob/gh-pages/LICENSE) license.
