@@ -77,7 +77,12 @@
             gauge.update(data);
           }
         };
+
+        request.onerror = function() {
+          console.log("Erro na requisição!");
+          gauge.update("-1");
         };
+
         // Send request
         request.send();
       };
