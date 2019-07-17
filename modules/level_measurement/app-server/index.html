@@ -57,6 +57,30 @@
           return (Math.random() * 100).toFixed(1);
         }
       }
+      const requestApiData = () => {
+        requestURL =
+          "https://www.random.org/integers/?num=1&min=0&max=100&col=1&base=10&format=plain&rnd=new";
+
+        // Create a request variable and assign a new XMLHttpRequest object to it.
+        var request = new XMLHttpRequest();
+        request.responseType = "json";
+
+        // Open a new connection, using the GET request on the URL endpoint
+        request.open("GET", requestURL, true);
+        console.log(request);
+
+        request.onload = function() {
+          // Begin accessing JSON data here
+          if (request.status >= 200 && request.status < 400) {
+            let data = JSON.parse(this.response);
+            console.log(data);
+            gauge.update(data);
+          }
+        };
+        };
+        // Send request
+        request.send();
+      };
     </script>
   </body>
 </html>
