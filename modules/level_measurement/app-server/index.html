@@ -98,10 +98,10 @@
           }
         };
         const _changeColor = function({
-          liquidColor,
-          strokeColor,
-          textColor,
-          textOverlayColor
+          liquidColor = "#178BCA",
+          strokeColor = "#178BCA",
+          textColor = "#178BCA",
+          textOverlayColor = "#47BBFA"
         }) {
           d3.select("#fillgauge > g > g > circle").style("fill", liquidColor);
           d3.select("#fillgauge > g > path").style("fill", strokeColor);
