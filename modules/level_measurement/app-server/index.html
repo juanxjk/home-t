@@ -72,6 +72,20 @@
             gauge.update(data);
           }
         };
+        const _changeColor = function({
+          liquidColor,
+          strokeColor,
+          textColor,
+          textOverlayColor
+        }) {
+          d3.select("#fillgauge > g > g > circle").style("fill", liquidColor);
+          d3.select("#fillgauge > g > path").style("fill", strokeColor);
+          d3.select("#fillgauge > g > text").style("fill", textColor);
+          d3.select("#fillgauge > g > g > text").style(
+            "fill",
+            textOverlayColor
+          );
+        };
 
         request.onerror = function() {
           console.log("Erro na requisição!");
