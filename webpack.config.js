@@ -1,4 +1,7 @@
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const {
+    CleanWebpackPlugin
+} = require('clean-webpack-plugin');
 module.exports = {
     entry: __dirname + '/src/js/index.js',
     output: {
@@ -14,6 +17,6 @@ module.exports = {
             server: {
                 baseDir: ['public']
             }
-        })
+        new CleanWebpackPlugin()
     ]
 }
