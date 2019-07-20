@@ -34,6 +34,7 @@
     "devDependencies": {
         "browser-sync": "2.26.7",
         "del": "4.1.1",
-        "merge-stream": "2.0.0"
+        "webpack": "^4.36.1",
+        "webpack-cli": "^3.3.6"
     }
 }
