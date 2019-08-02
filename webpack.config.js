@@ -80,6 +80,10 @@ module.exports = {
             server: {
                 baseDir: ['public']
             }
-        new CleanWebpackPlugin()
+        }),
+        new HtmlWebpackPlugin({
+            template: __dirname + '/src/index.html',
+            chunks: ['index-page']
+        }),
     ]
 }
