@@ -85,5 +85,12 @@ module.exports = {
             template: __dirname + '/src/index.html',
             chunks: ['index-page']
         }),
+        new MiniCssExtractPlugin({
+            // Options similar to the same options in webpackOptions.output
+            // all options are optional
+            filename: '[name].css',
+            chunkFilename: '[id].css',
+            ignoreOrder: false, // Enable to remove warnings about conflicting order
+        }),
     ]
 }
