@@ -6,8 +6,8 @@ module.exports = (srcPath, publicPath) => {
             dashboard: srcPath + 'pages/dashboard/js/dashboard.js',
         },
         output: {
-            path: publicPath + 'dashboard/js/',
-            filename: 'bundle.js'
+            path: publicPath + 'dashboard/',
+            filename: 'js/[name].bundle.js'
         },
 
         plugins: [
