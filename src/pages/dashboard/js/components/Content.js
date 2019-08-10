@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
 
+import Topbar from './Topbar'
 
 export default class Content extends Component {
     render() {
         return (
             <div id="content">
+                {/* <!-- Topbar --> */}
+                <Topbar></Topbar>
+                {/* <!-- End of Topbar --> */}
                 {/* <!-- Begin Page Content --> */}
                 <div className="container-fluid">
 
