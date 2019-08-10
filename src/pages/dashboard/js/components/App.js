@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 
+import Sidebar from './Sidebar'
 class App extends Component {
 	render() {
 		return (
 			<div>
-				<h1>Dashboard Page</h1>
+				{/* <!-- Begin of Sidebar --> */}
+				<Sidebar></Sidebar>
+				{/* <!-- End of Sidebar --> */}
 			</div>
 		);
 	}
