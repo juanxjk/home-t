@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Sidebar from './Sidebar'
+import Footer from './Footer';
 class App extends Component {
 	render() {
 		return (
@@ -8,6 +9,11 @@ class App extends Component {
 				{/* <!-- Begin of Sidebar --> */}
 				<Sidebar></Sidebar>
 				{/* <!-- End of Sidebar --> */}
+				<div id="content-wrapper" className="d-flex flex-column">
+					{/* <!-- Footer --> */}
+					<Footer></Footer>
+					{/* <!-- End of Footer --> */}
+				</div>
 			</div>
 		);
 	}
