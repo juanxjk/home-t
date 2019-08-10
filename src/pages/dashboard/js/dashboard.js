@@ -1,5 +1,5 @@
 import '../scss/dashboard.scss'
-import 'jquery/dist/jquery'
+import jQuery from 'jquery/dist/jquery'
 import 'popper.js/dist/popper'
 import 'chart.js/dist/Chart'
 
