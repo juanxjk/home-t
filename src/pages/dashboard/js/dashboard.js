@@ -14,6 +14,7 @@ import '@fortawesome/fontawesome-free/js/solid'
 import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 
+import 'jquery.easing/jquery.easing'
 (function($) {
   "use strict"; // Start of use strict
 
