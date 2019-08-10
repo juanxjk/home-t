@@ -3,6 +3,8 @@ import jQuery from 'jquery/dist/jquery'
 import 'popper.js/dist/popper'
 import 'chart.js/dist/Chart'
 
+import 'typeface-nunito'
+
 import fontawesome from "@fortawesome/fontawesome-free/scss/fontawesome.scss";
 import regular from "@fortawesome/fontawesome-free/scss/regular.scss";
 import solid from "@fortawesome/fontawesome-free/scss/solid.scss";
