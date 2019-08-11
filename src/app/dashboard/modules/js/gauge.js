@@ -1,5 +1,5 @@
 
-import d3 from 'd3';
+import * as d3 from 'd3';
 import { liquidFillGaugeDefaultSettings, loadLiquidFillGauge } from './liquidFillGauge';
 import '../css/style_gauge.css'
 

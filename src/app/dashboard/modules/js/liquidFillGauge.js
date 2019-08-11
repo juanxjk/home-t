@@ -6,7 +6,7 @@
  * Liquid Fill Gauge v1.1
  */
 
-import d3 from 'd3';
+import * as d3 from 'd3';
 
 export function liquidFillGaugeDefaultSettings() {
     return {
