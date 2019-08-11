@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import Topbar from './Topbar'
+import GaugeComponent from '../../../modules/components/GaugeComponent';
 
 export default class Content extends Component {
     render() {
@@ -101,12 +102,12 @@ export default class Content extends Component {
                     {/* <!-- Content Row --> */}
                     <div className="row">
 
-                        {/* <!-- Area Chart --> */}
+                        {/* <!-- Water Level Measurement --> */}
                         <div className="col-xl-8 col-lg-7">
                             <div className="card shadow mb-4">
                                 {/* <!-- Card Header - Dropdown --> */}
                                 <div className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 className="m-0 font-weight-bold text-primary">Earnings Overview</h6>
+                                    <h6 className="m-0 font-weight-bold text-primary">Medidor de Nível</h6>
                                     <div className="dropdown no-arrow">
                                         <a className="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i className="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -122,9 +123,7 @@ export default class Content extends Component {
                                 </div>
                                 {/* <!-- Card Body --> */}
                                 <div className="card-body">
-                                    <div className="chart-area">
-                                        <canvas id="myAreaChart"></canvas>
-                                    </div>
+                                    <GaugeComponent></GaugeComponent>
                                 </div>
                             </div>
                         </div>
