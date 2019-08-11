@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 
-import '../js/gauge'
 
 export default class GaugeComponent extends Component {
     render() {
@@ -16,5 +15,9 @@ export default class GaugeComponent extends Component {
                 </div>
             </div>
         )
+    }
+
+    componentDidMount() {
+        import( '../js/gauge')
     }
 }
