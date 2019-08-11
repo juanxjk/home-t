@@ -61,9 +61,9 @@ class Sidebar extends Component {
 				<li className="nav-item"> <a className="nav-link" href="charts.html">
 					<i className="fas fa-fw fa-chart-area"></i>
 					<span>Charts</span></a> </li>
-				{/* <!-- Nav Item - Tables --> */}
-				<li className="nav-item"> <a className="nav-link" href="tables.html">
-					<i className="fas fa-fw fa-table"></i> <span>Tables</span></a> </li> {/* <!-- Divider --> */} <hr className="sidebar-divider d-none d-md-block" />
+				{/* <!-- Nav Item - Settings --> */}
+				<li className="nav-item"> <a className="nav-link" href="#">
+					<i className="fas fa-fw fa-cog"></i> <span>Configurações</span></a> </li> {/* <!-- Divider --> */} <hr className="sidebar-divider d-none d-md-block" />
 				{/* <!-- Sidebar Toggler (Sidebar) --> */}
 				<div className="text-center d-none d-md-inline">
 					<button className="rounded-circle border-0" id="sidebarToggle">
