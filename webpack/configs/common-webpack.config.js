@@ -8,6 +8,12 @@ module.exports = (srcPath, publicPath) => {
     return {
         module: {
             rules: [{
+                    test: /\.(js|jsx)$/,
+                    exclude: /(node_modules|bower_components)/,
+                    use: {
+                        loader: 'babel-loader',
+                    }
+                }, {
                     test: /\.(scss)$/i,
                     loader: ['style-loader', 'css-loader', 'sass-loader']
                 },
