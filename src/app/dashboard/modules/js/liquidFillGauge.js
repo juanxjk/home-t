@@ -5,7 +5,10 @@
  *
  * Liquid Fill Gauge v1.1
  */
-function liquidFillGaugeDefaultSettings() {
+
+import d3 from 'd3';
+
+export function liquidFillGaugeDefaultSettings() {
     return {
         minValue: 0, // The gauge minimum value.
         maxValue: 100, // The gauge maximum value.
@@ -30,7 +33,7 @@ function liquidFillGaugeDefaultSettings() {
     };
 }
 
-function loadLiquidFillGauge(elementId, value, config) {
+export function loadLiquidFillGauge(elementId, value, config) {
     if (config == null) config = liquidFillGaugeDefaultSettings();
 
     var gauge = d3.select("#" + elementId);
