@@ -7,7 +7,7 @@ import Content from './Content';
 class App extends Component {
 	render() {
 		return (
-			<div>
+			<div id="page-top">
 				<div id="wrapper">
 					<Sidebar />
 					<div id="content-wrapper" className="d-flex flex-column">
