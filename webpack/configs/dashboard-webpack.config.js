@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = (srcPath, publicPath) => {
     return {
         entry: {
-            dashboard: srcPath + 'pages/dashboard/js/dashboard-app.js',
+            dashboard: srcPath + 'app/dashboard/index.js',
         },
         output: {
             path: publicPath + 'dashboard/',
@@ -12,7 +12,7 @@ module.exports = (srcPath, publicPath) => {
 
         plugins: [
             new HtmlWebpackPlugin({
-                template: srcPath + 'pages/dashboard/index.html',
+                template: srcPath + 'app/dashboard/index.html',
                 chunks: ['dashboard']
             })
         ]

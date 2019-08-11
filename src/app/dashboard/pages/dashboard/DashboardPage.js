@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 
-import Sidebar from './Sidebar'
-import Footer from './Footer';
-import Content from './Content';
+import Sidebar from './components/Sidebar';
+import Footer from './components/Footer';
+import Content from './components/Content';
+
+import './js/_dashboard';
 
 class App extends Component {
 	render() {
