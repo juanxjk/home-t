@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = (srcPath, publicPath) => {
     return {
         entry: {
-            dashboard: srcPath + 'pages/dashboard/js/dashboard.js',
+            dashboard: srcPath + 'pages/dashboard/js/dashboard-app.js',
         },
         output: {
             path: publicPath + 'dashboard/',
