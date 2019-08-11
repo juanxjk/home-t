@@ -18,6 +18,6 @@ export default class GaugeComponent extends Component {
     }
 
     componentDidMount() {
-        import( '../js/gauge')
+        import('../js/gauge')
     }
 }
