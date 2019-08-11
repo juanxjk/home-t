@@ -1,7 +1,7 @@
 import '../scss/dashboard.scss'
 import jQuery from 'jquery/dist/jquery'
 import 'popper.js/dist/popper'
-import 'chart.js/dist/Chart'
+import Chart from 'chart.js/dist/Chart'
 
 import 'typeface-nunito'
 
@@ -15,6 +15,10 @@ import '@fortawesome/fontawesome-free/js/fontawesome';
 import '@fortawesome/fontawesome-free/js/solid';
 import '@fortawesome/fontawesome-free/js/regular';
 import '@fortawesome/fontawesome-free/js/brands';
+
+// import './demo/chart-area-demo'
+// import './demo/chart-bar-demo'
+// import './demo/chart-pie-demo'
 
 import 'jquery.easing/jquery.easing'
 (function($) {
