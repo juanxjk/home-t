@@ -19,7 +19,7 @@ function NewValue() {
     }
 }
 const requestApiData = () => {
-    requestURL =
+    const requestURL =
         "https://www.random.org/integers/?num=1&min=0&max=100&col=1&base=10&format=plain&rnd=new";
 
     // Create a request variable and assign a new XMLHttpRequest object to it.
