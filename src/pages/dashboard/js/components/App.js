@@ -7,7 +7,7 @@ import Content from './Content';
 class App extends Component {
 	render() {
 		return (
-			<div>
+			<div id="wrapper">
 				{/* <!-- Begin of Sidebar --> */}
 				<Sidebar></Sidebar>
 				{/* <!-- End of Sidebar --> */}
