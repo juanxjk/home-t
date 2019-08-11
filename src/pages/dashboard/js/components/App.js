@@ -8,16 +8,10 @@ class App extends Component {
 	render() {
 		return (
 			<div id="wrapper">
-				{/* <!-- Begin of Sidebar --> */}
-				<Sidebar></Sidebar>
-				{/* <!-- End of Sidebar --> */}
+				<Sidebar />
 				<div id="content-wrapper" className="d-flex flex-column">
-					{/* <!-- Main Content --> */}
-					<Content></Content>
-					{/* <!-- End of Main Content --> */}
-					{/* <!-- Footer --> */}
-					<Footer></Footer>
-					{/* <!-- End of Footer --> */}
+					<Content />
+					<Footer />
 				</div>
 			</div>
 		);
