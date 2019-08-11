@@ -1,4 +1,8 @@
 
+import d3 from 'd3';
+import { liquidFillGaugeDefaultSettings, loadLiquidFillGauge } from './liquidFillGauge';
+import '../css/style_gauge.css'
+
 var config = liquidFillGaugeDefaultSettings();
 config.circleThickness = 0.1;
 config.textVertPosition = 0.2;

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import '../js/gauge'
+
 export default class GaugeComponent extends Component {
     render() {
         return (
