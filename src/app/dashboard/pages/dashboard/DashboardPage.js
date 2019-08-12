@@ -4,7 +4,6 @@ import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
 import Content from './components/Content';
 
-import './js/_dashboard';
 
 class App extends Component {
 	render() {
@@ -44,6 +43,9 @@ class App extends Component {
 				</div>
 			</div>
 		);
+	}
+	componentDidMount() {
+		import('./js/_dashboard');
 	}
 }
 
