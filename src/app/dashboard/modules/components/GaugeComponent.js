@@ -5,7 +5,7 @@ export default class GaugeComponent extends Component {
     render() {
         return (
             <div className="text-center">
-                <svg id="fillgauge" width="100%" height="250"></svg>
+                <svg id="fillgauge" height="250"></svg>
             </div>
         )
     }
