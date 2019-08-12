@@ -57,6 +57,8 @@ class Sidebar extends Component {
 					</div>
 				</div>
 				</li>
+				{/* <!-- Divider --> */}
+				<hr className="sidebar-divider" />
 				{/* <!-- Nav Item - Settings --> */}
 				<li className="nav-item"> <a className="nav-link" href="#">
 					<i className="fas fa-fw fa-cog"></i> <span>Configurações</span></a> </li> {/* <!-- Divider --> */} <hr className="sidebar-divider d-none d-md-block" />
