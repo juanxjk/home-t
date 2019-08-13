@@ -1,16 +1,10 @@
 
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap';
-import 'jquery'
-import 'popper.js'
-import 'simple-line-icons/scss/simple-line-icons.scss';
+import 'bootstrap/scss/bootstrap.scss';
+import 'bootstrap/js/dist/';
 import 'typeface-lato'
 
-import fontawesome from "@fortawesome/fontawesome-free/scss/fontawesome.scss";
-import regular from "@fortawesome/fontawesome-free/scss/regular.scss";
-import solid from "@fortawesome/fontawesome-free/scss/solid.scss";
-import brands from "@fortawesome/fontawesome-free/scss/brands.scss";
-fontawesome.library.add(solid, regular, brands) 
+import 'paper-kit-2/assets/css/paper-kit.css';
+import 'paper-kit-2/assets/js/paper-kit.js';
 
 import '@fortawesome/fontawesome-free/js/fontawesome'
 import '@fortawesome/fontawesome-free/js/solid'
