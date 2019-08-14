@@ -18,7 +18,7 @@ function NewValue() {
 }
 const requestApiData = () => {
     const requestURL =
-        "https://www.random.org/integers/?num=1&min=0&max=100&col=1&base=10&format=plain&rnd=new";
+        "http://192.168.0.105/api/water_level";
 
     // Create a request variable and assign a new XMLHttpRequest object to it.
     var request = new XMLHttpRequest();
@@ -31,7 +31,7 @@ const requestApiData = () => {
     request.onload = function () {
         // Begin accessing JSON data here
         if (request.status >= 200 && request.status < 400) {
-            let data = JSON.parse(this.response);
+            let data = JSON.parse(this.response['water_level']);
             console.log(data);
             const isLow_level = data < 25;
             const isHigh_level = data > 75;
