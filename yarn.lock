@@ -4459,6 +4459,11 @@ pako@~1.0.5:
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.10.tgz#4328badb5086a426aa90f541977d4955da5c9732"
   integrity sha512-0DTvPVU3ed8+HNXOu5Bs+o//Mbdj9VNQMUOe9oKCwh8l0GNwpTDMKCWbRjgtD291AWnkAgkqA/LOnQS8AmS1tw==
 
+paper-kit-2@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/paper-kit-2/-/paper-kit-2-2.1.0.tgz#c89bf56e1eb3def606808fc55a31d2532981160c"
+  integrity sha512-IRlEBivZes8PhGWWYQDSn5Z20xIXC+20q5JLkKLG9N40ZmHsKgDBJ8dq7P7SEw+dBAVKQ6GrRvXnDYJiT5YBNQ==
+
 parallel-transform@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/parallel-transform/-/parallel-transform-1.1.0.tgz#d410f065b05da23081fcd10f28854c29bda33b06"
