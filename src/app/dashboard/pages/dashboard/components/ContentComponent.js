@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import Topbar from './Topbar'
+import TopbarComponent from './TopbarComponent'
 import GaugeComponent from '../../../modules/components/GaugeComponent';
 
 export default class Content extends Component {
@@ -8,7 +8,7 @@ export default class Content extends Component {
         return (
             <div id="content">
                 {/* <!-- Topbar --> */}
-                <Topbar></Topbar>
+                <TopbarComponent></TopbarComponent>
                 {/* <!-- End of Topbar --> */}
                 {/* <!-- Begin Page Content --> */}
                 <div className="container-fluid">
