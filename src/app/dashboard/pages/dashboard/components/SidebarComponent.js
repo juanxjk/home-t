@@ -29,7 +29,7 @@ class Sidebar extends Component {
 				<li className="nav-item">
 					<a className="nav-link" href="#">
 						<i className="fas fa-fw fa-water"></i>
-						<span>Medidor de Nível de Água</span>
+						<span> Medidor de Nível de Água</span>
 					</a>
 					<div id="collapsePages" className="collapse"
 						aria-labelledby="headingPages"
