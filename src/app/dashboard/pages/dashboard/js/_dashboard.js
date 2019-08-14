@@ -1,4 +1,3 @@
-import {jQuery} from '../../../js/_global';
 
 import '../scss/dashboard.scss'
 

@@ -1,9 +1,4 @@
 
-import jQuery from 'jquery/dist/jquery';
-import $ from 'jquery/dist/jquery';
-import popper from 'popper.js/dist/popper'
-import Chart from 'chart.js/dist/Chart'
-
 import 'typeface-nunito'
 
 import fontawesome from "@fortawesome/fontawesome-free/scss/fontawesome.scss";
@@ -20,4 +15,3 @@ import '@fortawesome/fontawesome-free/js/brands';
 
 import 'jquery.easing/jquery.easing'
 
-export { jQuery, $, popper };

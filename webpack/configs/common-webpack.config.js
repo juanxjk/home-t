@@ -77,6 +77,7 @@ module.exports = (srcPath, publicPath) => {
             new webpack.ProvidePlugin({
                 $: 'jquery',
                 jQuery: 'jquery',
+                d3: 'd3',
                 'window.jQuery': 'jquery',
                 tether: 'tether',
                 Tether: 'tether',
