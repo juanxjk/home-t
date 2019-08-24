@@ -33,41 +33,24 @@ export default class Content extends Component {
                             fa_icon_color="text-gray-300"
                         />
                         {/* <!--  Electricity Consumed --> */}
-                        <div className="col-xl-3 col-md-6 mb-4">
-                            <div className="card border-left-success shadow h-100 py-2">
-                                <div className="card-body">
-                                    <div className="row no-gutters align-items-center">
-                                        <div className="col mr-2">
-                                            <div className="text-xs font-weight-bold text-success text-uppercase mb-1">Consumo de Energia</div>
-                                            <div className="h5 mb-0 font-weight-bold text-gray-800"> 143 KWh </div>
-                                        </div>
-                                        <div className="col-auto">
-                                            <i className="fas fa-lightbulb fa-2x text-warning"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <MiniCardComponent
+                            title="Consumo de Energia"
+                            title_color="text-success"
+                            content="143 KWh"
+                            left_border_color="border-left-success"
+                            fa_icon="fa-lightbulb"
+                            fa_icon_color="text-warning"
+                        />
 
                         {/* <!--  Water Consumed --> */}
-                        <div className="col-xl-3 col-md-6 mb-4">
-                            <div className="card border-left-success shadow h-100 py-2">
-                                <div className="card-body">
-                                    <div className="row no-gutters align-items-center">
-                                        <div className="col mr-2">
-                                            <div className="text-xs font-weight-bold text-success text-uppercase mb-1">Consumo de Água</div>
-                                            <div className="h5 mb-0 font-weight-bold text-gray-800"> 1216 L </div>
-                                        </div>
-                                        <div className="col-auto">
-                                            <i className="fas fa-tint fa-2x text-info"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
+                        <MiniCardComponent
+                            title="Consumo de Água"
+                            title_color="text-success"
+                            content="1216 L"
+                            left_border_color="border-left-success"
+                            fa_icon="fa-tint"
+                            fa_icon_color="text-info"
+                        />
 
                         {/* <!-- Tasks --> */}
                         <div className="col-xl-3 col-md-6 mb-4">
