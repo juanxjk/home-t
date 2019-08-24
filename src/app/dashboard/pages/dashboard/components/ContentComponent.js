@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import TopbarComponent from './TopbarComponent'
-import GaugeComponent from '../../../modules/components/GaugeComponent';
+import GaugeComponent from '../../../modules/liquid_level/components/GaugeComponent';
 import NotificationCardComponent from './NotificationCardComponent';
 
 export default class Content extends Component {
