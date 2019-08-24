@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import TopbarComponent from './TopbarComponent'
 import GaugeComponent from '../../../modules/liquid_level/components/GaugeComponent';
 import NotificationCardComponent from './NotificationCardComponent';
+import MiniCardComponent from './MiniCardComponent';
 
 export default class Content extends Component {
     render() {
@@ -23,22 +24,14 @@ export default class Content extends Component {
                     {/* <!-- Content Row --> */}
                     <div className="row">
                         {/* <!-- Acquired Modules --> */}
-                        <div className="col-xl-3 col-md-6 mb-4">
-                            <div className="card border-left-primary shadow h-100 py-2">
-                                <div className="card-body">
-                                    <div className="row no-gutters align-items-center">
-                                        <div className="col mr-2">
-                                            <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">Módulos</div>
-                                            <div className="h5 mb-0 font-weight-bold text-gray-800">1/1</div>
-                                        </div>
-                                        <div className="col-auto">
-                                            <i className="fas fa-boxes fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        <MiniCardComponent
+                            title="Módulos"
+                            title_color="text-primary"
+                            content="1/1"
+                            left_border_color="border-left-primary"
+                            fa_icon="fa-boxes"
+                            fa_icon_color="text-gray-300"
+                        />
                         {/* <!--  Electricity Consumed --> */}
                         <div className="col-xl-3 col-md-6 mb-4">
                             <div className="card border-left-success shadow h-100 py-2">
